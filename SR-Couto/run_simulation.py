@@ -70,13 +70,11 @@ print(f"\nSimulation completed in {elapsed:.1f}s")
 print(f"Apogee: {tf.apogee:.1f} m")
 
 # Extract and save solution
-solution = tf.solution
+solution = np.array(tf.solution)
 # Each row: [t, x, y, z, vx, vy, vz, e0, e1, e2, e3, w1, w2, w3, mass]
 solution_cols = ['Time', 'X', 'Y', 'Z', 'Vx', 'Vy', 'Vz', 'e0', 'e1', 'e2', 'e3', 'w1', 'w2', 'w3']
 if solution.shape[1] > 14:
     solution_cols.append('mass')
-if solution.shape[1] > 15:
-    solution_cols.append('mass_i')
 
 df = pd.DataFrame(solution, columns=solution_cols[:solution.shape[1]])
 df.to_csv("flight_data.csv", index=False)
