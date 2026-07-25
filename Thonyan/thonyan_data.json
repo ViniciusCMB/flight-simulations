@@ -1,6 +1,6 @@
 {
-    "radius" : 0.375,
-    "mass" : 2,482,
+    "radius" : 0.0375,
+    "mass" : 2.482,
     "inertia": [0.03701776391, 0.03701816753, 0.00237199311],
     "center_of_mass_without_motor": 0.76,
     "coordinate_system_orientation" : "nose_to_tail",
