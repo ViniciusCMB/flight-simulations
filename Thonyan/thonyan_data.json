@@ -8,6 +8,7 @@
     "root_chord": 0.063,
     "tip_chord": 0.057,
     "span": 0.07,
+    "sweep_length" : 0.037,
     "position": 1.337,
     "cant_angle": 0,
     "nose_length": 0.25,
